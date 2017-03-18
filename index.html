@@ -8,11 +8,10 @@
 </head>
 
 <body>
-    <h1>Zapisz się na szkolenie!</h1>
 
     <form action="https://formspree.io/claudia.zelazowska123@gmail.com" method="post">
-        <fieldset>
-            <legend>Informacje kontaktowe</legend>
+        
+            
 
             <label for="imie">Imię:</label>
             <br/>
@@ -30,29 +29,30 @@
             <br/>
             <input type="text" name="telefon" id="telefon">
             <br/>
-
-            <select name="select">
+            <p>Wybierz miasto:</p>
+            <select id="miasto"> 
                 <option value="krakow">Kraków</option>
                 <option value="warszawa">Warszawa</option>
                 <option value="gdansk">Gdańsk</option>
+                
             </select>
-            <p>Wybierz swoją płeć:
-                <br/>
-                <input type="radio" name="plec" value="kobieta" checked="checked" class="not" /> Kobieta
-                <input type="radio" name="plec" value="mezczyzna" class="not" /> Mężczyzna
-            </p>
-            <p>
+            <p>Wybierz płeć:</p>
+                <input type="radio" name="plec" value="kobieta" checked="checked"  /> Kobieta <br/>
+                <input type="radio" name="plec" value="mezczyzna"  /> Mężczyzna
+           
+            
+            <p>Wiadomość:</p>
+            <textarea name="comments"> Tutaj wpisz swoją wiadomość...</textarea> <br/>
+           <p>
+               <input type="checkbox" name="zgoda" value="none" checked="checked"/>
                 Wyrażam zgodę na przetwarzanie moich danych osobych (zaznacz pole)
-                <input type="checkbox" name="zgoda" value="none" />
             </p>
-            <p>Jakie są Twoje oczekiwania dotyczące tego szkolenia?</p>
-            <textarea name="comments"> Tutaj wpisz swoją wiadomość...</textarea>
             <br/>
-            <input type="submit" value="Wyślij" id="wyslij">
+            <input type="submit" value="SEND" id="SEND">
 
 
 
-        </fieldset>
+        
     </form>
 </body>
 
