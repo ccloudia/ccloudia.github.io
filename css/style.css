@@ -3,6 +3,7 @@ body {
     font-family: 'Lato', sans-serif;
     color: #291f1a;
     font-weight: 300;
+    margin: 0px;
 }
 
 nav>ul>li {
@@ -11,18 +12,15 @@ nav>ul>li {
     font-weight: 300;
     }
 
-nav#main-nav {
+#main-nav {
     position: fixed;
     width: 100%;
     text-align:right;
-/*    left:70%;*/
     background-color: white;
-    color: 1ac056;
-    
-    
-    
-    
-}
+    color: #1ac056;
+    top:0;
+    left:0;
+    }
 
 nav#main-nav:hover {
     color: purple;
@@ -36,14 +34,38 @@ a {
 #main-header {
     background-image: url(../img/img/header-background.jpg);
     background-size: cover;
+    background-attachment:local;
     background-position: center;
+    text-align:center;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
+}
+
+#main-header .main-header-content {
+    padding:30vh;
     
 }
 
-.main-header-content {
-    padding:30%vh;
+#about {
+    text-align:center;
+    padding: 0 80px 100px;
+    width:100%;
+    
+}
+section>figure>img {
+    max-height: 350px;
+     text-align:center;
+}
+
+section>figure {
+    width:50%;
+    margin:0;
+    float:left;
+}
+section>article {
+    width:50%;
+    float:left;
+    
 }
