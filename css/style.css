@@ -2,6 +2,27 @@ body {
     background-color: #19820B;
     font-family: 'Lato', sans-serif;
     color: #291f1a;
-    font-weight:300;
+    font-weight: 300;
+}
 
+nav>ul>li {
+    display: inline-block;
+    list-style: none;
+    background-color: #ffffff;
+    color: #1ac056;
+    font-weight: 300;
+}
+
+nav>ul>li:hover {
+    color: purple;
+}
+
+nav {
+    position: fixed;
+    left: 70%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
 }
