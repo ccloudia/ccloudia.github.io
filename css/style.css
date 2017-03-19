@@ -8,21 +8,35 @@ body {
 nav>ul>li {
     display: inline-block;
     list-style: none;
-    background-color: #ffffff;
-    color: #1ac056;
     font-weight: 300;
 }
 
-nav>ul>li:hover {
-    color: purple;
-}
-
-nav {
+nav#main-nav {
     position: fixed;
     left: 70%;
     width: 100%;
+    color: #1ac056;
+    background-color: #ffffff;
+}
+
+nav#main-nav:hover {
+    color: purple;
 }
 
 a {
     text-decoration: none;
+}
+
+header {
+    background-image: url(../img/img/header-background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-header-content {
+    padding:30vh%;
 }
