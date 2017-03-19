@@ -88,3 +88,14 @@ section>h2 {
     margin-bottom:35px;
     
 }
+
+figure {
+    position:inline-block;
+    text-align: center;
+    
+}
+
+h2>p {
+    text-align:center;
+    
+}
