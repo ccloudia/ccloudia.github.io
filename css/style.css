@@ -50,14 +50,14 @@ h1 {
     
 }
 
-span {
+h1>span {
     color: #1ac056;
     font-size: 60px;
 }
 
 #about {
     text-align:center;
-    padding: 0 80px 100px;
+    padding: 0 90px 100px;
     width:100%;
     background-color: #f9fcfe;
     
@@ -68,6 +68,7 @@ section>figure>img {
     max-width:100%;
     border: 15px solid white;
     border-radius: 10px;
+    
 }
 
 section>figure {
@@ -89,13 +90,20 @@ section>h2 {
     
 }
 
-figure {
+#skills-icons figure {
     position:inline-block;
     text-align: center;
     
 }
 
-h2>p {
+/*
+p {
     text-align:center;
+*/
     
+    
+}
+
+.main-header-content>h2 {
+    color: #fff;
 }
