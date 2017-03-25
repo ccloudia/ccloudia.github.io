@@ -1,44 +1,109 @@
-    @media (min-width:992px) and (max-width:1169px) {
-    #header {
-        background-image: url(../img/man-2.jpg);
-        background-size: cover;
-        background-attachment: local;
-        background-position: center;
-        height: 70vh;
+/*Generalne ustawienia responsywne*/
+
+@media all and (max-width:1200px) {
+    /*    Responsywne portfolio*/
+    .single-portfolio-item {
+        width:50%;
+        
     }
-    #header h1 {
-        top: 15%;
-        left: 60%;
-        font-size: 2rem;
-    }
-    #header h2 {
-        top: 7%;
-        left: 60%;
+    .single-portfolio-item:last-child {
+        width:100%;
     }
 }
 
-@media (max-width:991px) {
-    body {
-        background-color: white;
-        color: black;
+@media all and (max-width:768px) {
+    
+    /*    Responsywne menu*/
+    #main-nav label.toggle {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
     }
-    #header {
-        height: 50vh;
+    #main-nav ul {
+        display: none;
     }
-    #header h1 {
-        top: 110%;
-        text-align: center;
-        font-size: 1.8rem;
-        left: 10%;
-        right: 10%;
+    #main-nav #drop:checked + ul {
+        display: block;
     }
-    #header h2 {
-        top: 100%;
-        font-size: 1.2rem;
-        left: 25%;
-        right: 25%;
+    #main-nav ul li {
+        display: block;
+        width: 100%;
+    }
+    #main-nav ul li a {
+        text-align: right;
+        padding: 20px;
+    }
+    
+    /*    Responsywny nagłowek*/
+    .main-header-content {
+        padding:10%;
+    }
+    /*O mnie*/
+    
+    #about {
+        border-bottom: none;
+    }
+    #about figure {
+        width:100%;
+    }
+    
+    #about figure img {
+/*        max-height: inherit;*/
+    }
+    
+    #about #about-content {
+        width:100%;
+    }
+    
+    /*    Responsywne portfolio*/
+    
+    .single-portfolio-item {
+        width:100%;
+    }
+    /*    Responsywny kontakt*/
+    
+    .contact-data {
+        width:100%;
+        text-align:center;
+    }
+    
+    #contact h2 {
         text-align: center;
     }
     
+    .contact-form {
+        width:100%;
+    }
+    
+    .contact-social-icons a {
+        margin:0;
+    }
+}
+
+@media all and (max-width:680px) {
+    
+    h1 {
+        font-size:3em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    section {
+        
+        padding:0 40px 50px;
+}
+
+@media all and (max-width:480px) {
+    section {
+        padding: 0 10px 30px;
+    }
     
 }
