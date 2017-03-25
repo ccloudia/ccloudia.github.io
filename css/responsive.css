@@ -9,6 +9,10 @@
     .single-portfolio-item:last-child {
         width:100%;
     }
+    
+    #about {
+        border-bottom: none;
+    }
 }
 
 @media all and (max-width:768px) {
@@ -88,6 +92,10 @@
 
 @media all and (max-width:680px) {
     
+    #about {
+        border-bottom: none;
+    }
+    
     h1 {
         font-size:3em;
     }
@@ -106,4 +114,7 @@
         padding: 0 10px 30px;
     }
     
+    #about {
+        border-bottom: none;
+    }
 }
