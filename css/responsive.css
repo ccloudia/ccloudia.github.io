@@ -119,8 +119,11 @@
     }
 }
     
+/*
 @media all and (max-device-width:768px) {
     .main-header-content {
         padding: 5%;
+    
     }
+*/
 }
