@@ -38,11 +38,15 @@
     #main-nav ul li {
         display: block;
         width: 100%;
+        text-align: right;
+        padding: 20px;
     }
+/*
     #main-nav ul li a {
         text-align: right;
         padding: 20px;
     }
+*/
     
     /*    Responsywny nagłowek*/
     .main-header-content {
@@ -58,7 +62,7 @@
     }
     
     #about figure img {
-/*        max-height: inherit;*/
+        max-height: inherit;
     }
     
     #about #about-content {
