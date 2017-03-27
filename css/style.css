@@ -354,6 +354,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #fff;
     color:#1ac056;
+    cursor: pointer;
 }
 
 /*FOOTER*/
