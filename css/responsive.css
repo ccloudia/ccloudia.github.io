@@ -1,0 +1,133 @@
+/*Generalne ustawienia responsywne*/
+
+@media all and (max-width:1200px) {
+    /*    Responsywne portfolio*/
+    .single-portfolio-item {
+        width:50%;
+        
+    }
+    .single-portfolio-item:last-child {
+        width:100%;
+    }
+    
+    #about {
+        border-bottom: none;
+    }
+}
+
+@media all and (max-width:768px) {
+    
+    /*    Responsywne menu*/
+    #main-nav label.toggle {
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    #main-nav ul {
+        display: none;
+    }
+    #main-nav #drop:checked + ul {
+        display: block;
+    }
+    #main-nav ul li {
+        display: block;
+        width: 100%;
+        text-align: right;
+        padding: 20px;
+    }
+/*
+    #main-nav ul li a {
+        text-align: right;
+        padding: 20px;
+    }
+*/
+    
+    /*    Responsywny nagłowek*/
+    .main-header-content {
+        padding:10%;
+    }
+    /*O mnie*/
+    
+    #about {
+        border-bottom: none;
+    }
+    #about figure {
+        width:100%;
+    }
+    
+    #about figure img {
+        max-height: inherit;
+    }
+    
+    #about #about-content {
+        width:100%;
+    }
+    
+    /*    Responsywne portfolio*/
+    
+    .single-portfolio-item {
+        width:100%;
+    }
+    /*    Responsywny kontakt*/
+    
+    .contact-data {
+        width:100%;
+        text-align:center;
+    }
+    
+    #contact h2 {
+        text-align: center;
+    }
+    
+    .contact-form {
+        width:100%;
+    }
+    
+    .contact-social-icons a {
+        margin:0;
+    }
+}
+
+@media all and (max-width:680px) {
+    
+    #about {
+        border-bottom: none;
+    }
+    
+    h1 {
+        font-size:3em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    section {
+        
+        padding:0 40px 50px;
+}
+
+@media all and (max-width:480px) {
+    section {
+        padding: 0 10px 30px;
+    }
+    
+    #about {
+        border-bottom: none;
+    }
+}
+    
+@media all and (max-device-width:768px) {
+/*
+    .main-header-content {
+        padding: 5%;
+    
+    }
+*/
+}

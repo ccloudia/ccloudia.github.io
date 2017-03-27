@@ -3,28 +3,148 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Zadania z CSS</title>
+    <title>Portfolio</title>
+    <!--    Lato -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet" type="text/css">
+    <!--    Roboto -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet" type="text/css">
+    <!--    CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
+    <nav id="main-nav">
 
+        <label for="drop" class="toggle">Menu</label>
+        <input type="checkbox" id="drop">
 
-<div id="one" class="number">1</div>
-<div id="two" class="number">2</div>
-<div id="three" class="number">3</div>
-<div id="four" class="number">4</div>
-<div id="five" class="number">5</div>
-<div id="six" class="number">6</div>
-<div id="seven" class="number">7</div>
-<div id="eight" class="number">8</div>
-<div id="nine" class="number">9</div>
-<div id="ten" class="number">10</div>
-<div id="container">
-<div class="heart"></div>
-<h1>I <span>CSS</span></h1>
-</div>
+        <ul>
+            <li><a href="#about">o mnie</a></li>
+            <li><a href="#skills">moje umiejętności</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <li><a href="#contact">kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header id="main-header">
+        <div class="main-header-content">
+            <h1>Claudia <span>Żelazowska</span></h1>
+            <h2>Front-End Developer</h2>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>O <span>mnie</span></h2>
+        <figure><img src="./img/img/jan-nowak.jpg" alt="Jan Nowak"></figure>
+        <article id="about-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero fuga cumque nostrum, illum ipsa, odio repudiandae! Et maxime, nobis doloremque ullam assumenda iusto sunt eaque aperiam pariatur neque, voluptatibus molestias nulla ipsa sint consectetur suscipit cum provident. Quisquam molestiae culpa hic, quo saepe neque, earum, accusamus quibusdam quae nulla odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis obcaecati ipsa et commodi ut, nulla dolorem, blanditiis cumque natus esse temporibus, amet quam doloremque. Deleniti aliquid nihil reiciendis ipsam odit debitis quam ullam, provident vel praesentium neque, expedita maiores culpa odio fugit placeat velit eum eos nam repellendus et iste.</p>
+        </article>
+    </section>
+
+    <section id="skills">
+        <h2>Moje <span>umiejętności</span></h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis temporibus quia fuga ea, animi reiciendis hic sit reprehenderit aliquid tempora!</p>
+        <div id="skills-icons">
+            <figure><img src="./img/icons/css3.png" alt="css3">
+                <figcaption>CSS3</figcaption>
+            </figure>
+            <figure><img src="./img/icons/html5.png" alt="html5">
+                <figcaption>HTML5</figcaption>
+            </figure>
+            <figure><img src="img/icons/jquery.png" alt="jquery">
+                <figcaption>jQuery</figcaption>
+            </figure>
+            <figure><img src="./img/icons/js.png" alt="js">
+                <figcaption>JavaScript</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Moje <span>Portfolio</span></h2>
+        <div class="portfolio-items">
+            <div class="single-portfolio-item" id="portfolio-item-1">
+                <div class="single-portfolio-item-mask">
+                    <div class="single-portfolio-item-mask-content">
+                        <div class="single-portfolio-item-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p>Opis projektu Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cum dolore aliquid at hic quia minus similique officiis beatae assumenda?</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, jQuery</p>
+                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-portfolio-item" id="portfolio-item-2">
+                <div class="single-portfolio-item-mask">
+                    <div class="single-portfolio-item-mask-content">
+                        <div class="single-portfolio-item-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p>Opis projektu Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cum dolore aliquid at hic quia minus similique officiis beatae assumenda?</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, jQuery</p>
+                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="single-portfolio-item" id="portfolio-item-3">
+                <div class="single-portfolio-item-mask">
+                    <div class="single-portfolio-item-mask-content">
+                        <div class="single-portfolio-item-content-inner">
+                            <h3>Lorem ipsum</h3>
+                            <p>Opis projektu Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam cum dolore aliquid at hic quia minus similique officiis beatae assumenda?</p>
+                            <h4>Wykorzystane technologie:</h4>
+                            <p>HTML5, CSS3, RWD, Bootstrap, JavaScript, jQuery</p>
+                            <a href="#"><i class="fa fa-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-data">
+            <h2>Claudia <span>Żelazowska</span></h2>
+            <adress>
+                ul. Oboźna 3/23
+                <br>00-340 Warszawa
+                <br>
+                <br>tel.603747227
+                <br>e-mail: <a href="mailto:claudia_zel@yahoo.it">claudia_zel@yahoo.it</a>
+
+            </adress>
+
+            <div class="contact-social-icons">
+                <a href="https://www.facebook.com"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form action="https://formspree.io/claudia.zelazowska123@gmail.com" method="post">
+                <label for="imie"></label>
+                <input type="text" name="imieinazwisko" id="imieinazwisko" placeholder="Imię i nazwisko">
+                <label for="email"></label>
+                <br>
+                <input type="email" name="email" id="email" placeholder="E-mail">
+                <br>
+                <textarea name="message" placeholder="Treść wiadomości"></textarea>
+                <br>
+                <input type="submit" name="wyslij" value="Wyślij" />
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <p>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> Claudia Żelazowska</p>
+    </footer>
 </body>
 
 </html>
