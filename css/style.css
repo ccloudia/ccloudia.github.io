@@ -8,9 +8,9 @@ body {
 /*MENU*/
 
 
-.menu {
-    margin-top:20px;
-    background-color: transparent;
+.navbar-custom {
+/*    margin-top:20px;*/
+    background-color:#222222; 
    border-bottom-color: transparent;
 }
 
@@ -59,7 +59,21 @@ background-color: #fff;
   color:  #0ed8d6;
 }
 
+@media (min-width: 768px) {
+    .navbar-custom {
+        background-color: transparent;
+        padding:25px 0;
+        transition: padding 0.3s;
+        border: none;
+    }
 
+}
+@media (min-width:768px) {
+    .navbar-custom.affix {
+        background-color: #222222;
+        padding:10px 0;
+    }
+}
 /*HEADER*/
 
 header {
