@@ -9,7 +9,7 @@ body {
 
 
 .navbar-custom {
-/*    margin-top:20px;*/
+
     background-color:#222222; 
    border-bottom-color: transparent;
 }
@@ -429,7 +429,6 @@ footer {
 footer span.copyright {
   line-height: 40px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
   text-transform: none;
 }
 footer ul.linki-footer {
