@@ -1,0 +1,193 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inconsolata', monospace;
+}
+
+
+/*NAVIGATION*/
+
+nav {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    font-family: 'Prata', serif;
+    font-size: 22px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Prata', serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 150px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 100px;
+}
+
+p {
+    line-height: 145%;
+}
+
+#works {
+    color: #0e726f;
+}
+
+.works-img {
+    position: relative;
+    width: 100%;
+}
+
+#works h2 {
+    color: #4dc2bd;
+}
+
+#works h4 {
+    position: absolute;
+    z-index: 1;
+    top: -25px;
+}
+
+#works h4.right-aligned {
+    right: 0;
+}
+
+.extra-gutters {
+    padding: 0 60px;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.aboutme h2 {
+    color: #003170;
+}
+
+.contact h2 {
+    color: #f3747b;
+}
+
+.img-margin {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    color: #16736e;
+    background: #75e3dd;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0;
+    padding: 4px;
+}
+
+.works a {
+    letter-spacing: 3px;
+    color: #53c3c4;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.aboutme h3 {
+    color: #306fbf;
+    margin: 0 0 70px 0;
+    line-height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    text-align: center;
+    font-size: 22px;
+}
+
+.navigation li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navigation li a {
+    color: #27bcb8;
+    text-decoration: none;
+}
+
+.left-col,
+.right-col {
+    color: #ffffff;
+    text-align: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-col {
+    background-color: #003170;
+}
+
+.right-col {
+    background-color: #75e3dd;
+}
+
+.top-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.scroll {
+    color: #2864b1;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*Image takes 100% of the parent container. */
+
+img {
+    max-width: 100%;
+    /*    position: relative;*/
+}
+
+footer {
+    background-color: #f5979c;
+    min-height: 220px;
+    background-image: url('../img/socialmedia.svg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.social-icon {
+    height: 60px;
+    margin: 10px 20px;
+}
+
+.social-icon-container {
+    text-align: center;
+}
+
+.social-icon-container img {
+    color: #fff;
+}
