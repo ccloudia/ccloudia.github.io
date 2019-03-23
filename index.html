@@ -1,173 +1,281 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Portfolio - Claudia Zelazowska</title>
+    <meta charset="UTF-8">
+    <title>Claudia's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="css/bootstrap-grid.css" type="text/css">
-    <link rel="stylesheet" href="css/responsive.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Prata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Radley:400,400i|Space+Mono:400,400i" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="icon" href="img/kanelbulle.png">
+
 </head>
 
 <body>
 
-    <!--   NAV-->
-    <nav>
-        <ul class="navigation">
-            <li><a href="#hello">hello</a></li>
-            <li><a href="#works">works</a></li>
-            <li><a href="#aboutme">about me</a></li>
-            <li><a href="#contact">contact</a></li>
-        </ul>
 
-    </nav>
-
-
-    <header class="row" id="hello">
-        <!--    Left column-->
-        <section class="col col-xs-12 left-col">
-            <div class="top-container">
-                <h1>hello</h1>
-                <p>I'm Claudia and this is my very own website! I'm a KTH student looking for thesis work within UX design. You can find out more about myself below :) </p>
-            </div>
-        </section>
-        <!--     right column-->
-
-        <section class="col col-xs-12 right-col">
-            <div class="top-container">
-                <img src="img/cactus.jpg" alt="image of myself" />
-                <br>
-                <p>Nice to meet you!</p>
-            </div>
-        </section>
+    <!--   Header-->
+    <header>
+        <nav>
+            <ul>
+                <li><a class="effect" href="#">intro</a></li>
+                <li><a class="effect" href="#cool-projects">projects</a></li>
+                <li><a class="effect" href="#about-me">about me</a></li>
+                <li><a class="effect" href="#contact">contact</a></li>
+            </ul>
+        </nav>
+        <div class="typewriter">
+            <h1>Hi there!</h1></div>
+        <p>I'm an aspiring UX/UI designer based in Stockholm
     </header>
 
-    <main class="container">
-        <p class="scroll">scroll down to find out more about myself</p>
-        <!--Works-->
-        <section id="works">
-            <h2>works</h2>
-            <!--        First-->
-            <div class="row no-gutters">
-                <div class="col col-one col-xs-6">
-                    <h4>user centered research and design</h4>
-                    <img src="img/pineapp.jpg" class="works-img" alt="Pineapple" />
-                </div>
-                <div class="col col-two col-xs-6">
-                    <div class="extra-gutters to-right">
-                        <h3>Spotify Social Feature</h3>
-                        <p>Period: February-March 2018
-                            <br> Project for the course in Interaction Design Methods (DH2628) at KTH.
-                            <br> The goal of the course was to learn user-centered design. Our final project was to look at music consumption and investigate what are the problems and what can be improved. My group decided to focus on exploring the social aspect of music and how Spotify can connect people through music.
-                        </p>
-                        <a class="link" href="https://preview.uxpin.com/168296d5f65331af9106aeca91bb72adf8394a6c#/pages//simulate/sitemap" target="_blank">LINK TO THE PROJECT</a>
-                        <br>
-                        <br>
-                        <a class="link" href="https://docs.google.com/document/d/1vRaja_LrLWB7u0H6BwWXa3wXZa9643kNlyRN62VWxyw/edit?usp=sharing" target="_blank">LINK TO DOCUMENTED DESIGN PROCESS</a>
-                    </div>
-                </div>
+<!--
+       Social media on the left side
+    <section class="social-media">
+        <ul>
+            <li>
+                <a class="effect" href="facebook.com" target="_blank"><img src="/img/facebook.svg" alt="facebook icon"></a>
+            </li>
+            <li>
+                <a class="effect" href="instagram.com" target="_blank"><img src="/img/instagram.svg" alt="instagram icon"></a>
+            </li>
+            <li>
+                <a class="effect" href="twitter.com" target="_blank"><img src="/img/twitter.svg" alt="twitter icon"></a>
+            </li>
+        </ul>
+    </section>
+-->
+
+    <div class="container">
+
+        <!--    About-me section with a short intro-->
+
+        <section class="row" id="about-me">
+            <div class="col-md-6">
+                <h2>short introduction</h2>
+                <p>I'm a Master's student at KTH, graduating in Media Technology/Management in June 2019. I'm currently doing my thesis project in <span class="inline">UX/UI design </span> (more specifically redesigning a GIS interface) and would love to pursue it as a career after graduating.
+                </p>
+
+                <h2>my skillset</h2>
+                <ul class="list">
+                    <li>UX research (quantitative & qualitative methods)</li>
+                    <li>UI design (Adobe XD/UXPin)</li>
+                    <li>coding (HTML/CSS/JS)</li>
+                    <li>basics of graphic design (Adobe Illustrator/Photoshop)</li>
+                </ul>
+                <a class="effect" href="https://www.linkedin.com/in/claudia-%C5%BCelazowska/">read more on linkedin</a>
             </div>
+            <div class="col-md-5 offset-md-1 author">
+                <figure><img src="img/me-at-laptop.jpg" alt="picture of me">
+                </figure>
 
-            <!--        Second-->
-            <div class="row no-gutters">
-                <div class="col col-xs-6">
-                    <div class="extra-gutters to-left">
-                        <h3>Festagram</h3>
-                        <p>Period: May 2018
-                            <br> Project for Social Media Technologies (DM2578) at KTH.
-                            <br> The final task of this course was to design a social media app that would reuse cultural heritage open data and crowdsourcing. Festagram is an app that allows users to share their cultural events with the larger public.
-                        </p>
-                        <a class="link" href="https://xd.adobe.com/view/0419ca2a-314a-438e-58d1-37108fde64c3-7228/" target="_blank">LINK TO THE PROJECT</a>
-                        <br>
-                        <br>
-                        <a class="link" href="https://drive.google.com/file/d/11EVZNj7fLBJFCNRBZgJcmqx-FX-3ZC-n/view?usp=sharing" target="_blank">LINK TO DOCUMENTED DESIGN PROCESS</a>
-                    </div>
-                </div>
-
-                <div class="col col-xs-12">
-                    <h4 class="right-aligned to-right branding-mobile">design of the interface</h4>
-                    <img src="img/healthydining.jpg" class="works-img" alt="Healthy Dining" />
-                </div>
-            </div>
-
-            <!--        Third-->
-            <div class="row no-gutters">
-                <div class="col">
-                    <h4>redesign of an interface</h4>
-                    <img src="img/smartcity.jpg" class="works-img" alt="Smart City" />
-                </div>
-
-                <div class="col">
-                    <div class="extra-gutters right-aligned">
-                        <h3>Bring Your Own Laptop</h3>
-                        <p>Period: July 2018
-                            <br> Project for course "UI/UX & Web Design using Adobe XD 2018 - User Experience Design" on Skillshare.
-                            <br> The goal of the course was to learn Adobe XD and redesign the interface of an e-learning platform.
-                        </p>
-                        <a class="link" href="https://www.bringyourownlaptop.com/" target="_blank">LINK TO WEBSITE TO BE REDESIGNED</a>
-                        <br>
-                        <br>
-                        <a class="link" href="https://xd.adobe.com/view/cd767a79-b9ca-4947-60e5-ce776a4d77c5-bb47/" target="_blank">LINK TO WIREFRAME</a>
-                        <br>
-                        <br>
-                        <a class="link" href="https://xd.adobe.com/view/53574245-40a0-40d9-7f55-6aa74e3836e4-2566/" target="_blank">LINK TO HIFI PROTOTYPE</a>
-                        <br>
-                        <br>
-                        <a class="link" href="https://docs.google.com/document/d/1LiylUUazuwNWYl2qz7ipXs0atykmnEMHrOx7UZiM-SM/edit?usp=sharing" target="_blank">LINK TO DESIGN BRIEF FROM TEACHER</a>
-                    </div>
-                </div>
             </div>
         </section>
-        <!--My Team-->
-        <section class="aboutme" id="aboutme">
-            <h2>about me</h2>
 
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="img/morocco.jpg" class="img-margin" alt="Picture of myself" />
-                </div>
-                <div class="col">
-                    <h3>a very short introduction</h3>
-                    <p>I'm currently at my final year of studies at KTH, doing a Master's in Media Management/Technology. I'm looking for thesis work within UX design in order to develop my interests in this area and hopefully land a job in this field in the future.
-                        <br>
-                        <br> Except for studying, I've also been working part-time within the e-commerce department at a Swedish brand called Happy Socks. Me and my team are responsible for the Customer Experience which means finding and trying new ways of how to improve the overall shopping experience on the Happy Socks'website.
-                        <br>
-                        <br> My main interests which I try to develop in my free time are: coding, UX/UI design, graphic design and online marketing.</p>
-                </div>
+
+        <!--        Projects that are connected to KTH NEW-->
+
+        <section class="row" id="cool-projects">
+            <div class="col-md-12 extra-breathing">
+
+                <h2>kth projects</h2>
+                <p>Below are some projects I did while studying at KTH.</p>
+            </div>
+
+            <!--            first project - Spotify-->
+            <div class="col-md-5 extra-breathing">
+                <h3>Social feature for the Spotify app</h3>
+                <br>
+                <p> <span class="inline"> Brief: </span>The goal of the course was to learn user-centered design. We were given the task of looking at music consumption identify an interesting problem and turn it into a design opportunity. My group decided to explore the social aspect of music and more specifically how could Spotify connect people through its app.
+                    <br> <span class="inline">Course:</span> Interaction Design Methods (DH2628) at KTH.
+                    <br>
+                    <span class="inline">Methods:</span>focus group, interviews, bodystorming, user testing
+                    <br><span class="inline">Final deliverable:</span> a hi-fi prototype of a feature which allows users to connect to people going to the same concert on the Spotify app.</p>
+                <a href="https://xd.adobe.com/view/badca1e3-5915-40b2-640e-32a0b1ef83aa-cced/" target="_blank">LINK TO HI-FI PROTOTYPE</a>
+                <br>
+                <br>
+                <a href="https://docs.google.com/document/d/1vRaja_LrLWB7u0H6BwWXa3wXZa9643kNlyRN62VWxyw/edit?usp=sharing" target="_blank">LINK TO DOCUMENTED DESIGN PROCESS</a>
+            </div>
+
+            <div class="col-md-5 offset-md-2 kth-projects extra-breathing">
+                <h4>UX/UI design</h4>
+                <img src="img/spotify-new.jpg" class="line-text" alt="spotify project">
+
+            </div>
+
+            <!--           Second project - social media-->
+            <div class="col-md-5 kth-projects extra-breathing">
+                <h4>UX/UI design</h4>
+                <img src="img/htc-phone.jpg" class="line-text" alt="prototype of social media app">
+
+            </div>
+
+            <div class="col-md-5 offset-md-2 colored extra-breathing">
+                <h3>Festagram: a social media app</h3>
+                <p> <span class="inline"> Brief: </span>The aim of the project was to find a way to reuse cultural heritage open data and crowdsourcing in an engaging way to solve the decreasing participation within the already existing social media tools of this kind.
+                    <br> <span class="inline">Course:</span> Social Media Technologies (DM2578) at KTH.
+                    <br>
+                    <span class="inline">Methods:</span>sketches, rapid prototyping, personas, user scenarios and interviews.
+                    <br><span class="inline">Final deliverable:</span> A prototype which displays open data about festivities in different countries and from different times allowing users to contribute and interact with each other. </p>
+                <a href="https://xd.adobe.com/view/0419ca2a-314a-438e-58d1-37108fde64c3-7228/" target="_blank">LINK TO HI-FI PROTOTYPE</a>
+                <br>
+                <br>
+                <a href="https://drive.google.com/file/d/11EVZNj7fLBJFCNRBZgJcmqx-FX-3ZC-n/view" target="_blank">LINK TO DOCUMENTED DESIGN PROCESS</a>
+
+            </div>
+
+
+
+            <!--            third project - bracelet-->
+            <div class="col-md-5">
+                <h3>Digital bracelet: designing for relaxation</h3>
+                <p> <span class="inline"> Brief: </span>The aim of the project was to design a unique experience for one person. My partner wanted me to design something for relaxation.
+                    <br> <span class="inline">Course:</span> User Experience Design and Evaluation at KTH (DM2630).
+                    <br>
+                    <span class="inline">Methods:</span>interview, design probes, sketching (on paper & digital), storyboarding
+                    <br><span class="inline">Final deliverable:</span> Physical design probes, a storyboard and digital sketches representing the idea.</p>
+                <a href="https://docs.google.com/presentation/d/1omzqlQtDYmmYvBD-FpgSDarix6sm7i0A28nv3tJPsrc/edit?usp=sharing" target="_blank">LINK TO DOCUMENTED DESIGN PROCESS</a>
+                <br>
+            </div>
+
+            <div class="col-md-5 offset-md-2 kth-projects extra-breathing">
+                <h4>physical interaction design</h4>
+                <img src="img/bracelet-party.gif" class="line-text" alt="">
+
             </div>
         </section>
-        <!--Contact-->
-        <section class="contact" id="contact">
-            <h2>contact</h2>
-            <div class="row">
-                <div class="col">
-                    <p>Email: claudiaz@kth.se</p>
-                    <p>Feel free to drop a message and say hello!</p>
 
-                    <p>You can also find some of my other small coding projects <a href="https://codepen.io/ccloudia/" target="_blank">here</a></p>
-                </div>
-                <div class="col">
-                    <img src="img/contact1.jpg" alt="">
-                </div>
-                <div class="col">
-                    <img src="img/contact2.jpg" alt="">
-                </div>
+
+
+        <!--       Projects section (non-KTH related)-->
+
+        <!--
+        <section class="row" id="projects">
+            <div class="col-md-12">
+
+                <h2>other projects</h2>
+                <p>Below are some projects I did in my spare time.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/Zrzut%20ekranu%202019-03-15%20o%2016.51.45.png" alt="the vintage house">
+                <h3>+ redesign of an e-learning website</h3>
+                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/Zrzut%20ekranu%202019-03-15%20o%2016.51.27.png" alt="colors of interiors">
+                <h3>+ website for Oolong Tea House</h3>
+                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            </div>
+            <div class="col-md-4">
+                <h3>+ projects using Javascript</h3>
+                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+                <h3>+ another project</h3>
+                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+                <h3>+ and one more</h3>
+                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+                <h3>+ graphic design projects</h3>
+                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
             </div>
         </section>
-    </main>
+        
+-->
+
+        <!--    EXPERIMENT-->
+        <section class="row">
+            <div class="col-md-12 extra-breathing">
+
+                <h2>other projects</h2>
+                <p>Below are some projects I did in my spare time.</p>
+            </div>
+            <div class="col-md-6 extra-breathing">
+                <img src="img/oolong-website.png" alt="">
+            </div>
+
+            <div class="col-md-5 offset-md-1 center-container">
+                <h3>Website for Oolong Tea House</h3>
+                <p>My friend and I made a website in Wordpress for the newly opened tea house in Hötorget (Stockholm).
+                <br><br> Click <a href="http://oolongteahouse.se/">here</a> to see it.
+                </p>
+            </div>
+            
+            <div class="col-md-6">
+                <h3>Redesign of an e-learning website</h3>
+                <p>Project for course "UI/UX & Web Design using Adobe XD 2018 - User Experience Design" on Skillshare. 
+                The goal of the course was to learn Adobe XD and redesign the interface of an existing e-learning platform.
+                    <br><br>
+                    <a href="https://www.bringyourownlaptop.com/" target="_blank">Link to website to be redesigned</a> <br>
+                    <a href="https://xd.adobe.com/view/53574245-40a0-40d9-7f55-6aa74e3836e4-2566/" target="_blank">Link to hi-fi prototype</a> <br>
+                    <a href="https://xd.adobe.com/view/cd767a79-b9ca-4947-60e5-ce776a4d77c5-bb47/" target="_blank">Link to wireframes</a> <br>
+                    <a href="https://docs.google.com/document/d/1LiylUUazuwNWYl2qz7ipXs0atykmnEMHrOx7UZiM-SM/edit?usp=sharing" target="_blank">Link to design brief from teacher</a>
+                    
+                </p>
+                
+            </div>
+            
+            <div class="col-md-6">
+               <img src="img/byol-website.png" alt="">   
+            </div>
+            
+           <div class="col-md-6 extra-breathing">
+                <img src="img/sl-app.jpg" alt="">
+            </div>
+
+            <div class="col-md-5 offset-md-1 center-container">
+                <h3>Redesigning buying tickets in the SL app</h3>
+                <p>Since I use the SL app daily, I thought it would be fun to think how it can be redesigned. Based on some interviews I decided to focus on redesigning the user experience of buying tickets.
+                <br><br><a href="https://docs.google.com/document/d/1y08pf8-jxyX5jyvRaRjQZ-htlllkuovCm_vwjlpkfMs/edit?usp=sharing" target="_blank">Link to documented design process</a>
+                <br> <a href="https://xd.adobe.com/view/ab4ea8f1-3626-4420-6d15-b61999765115-dd7f/" target="_blank">Link to wireframes</a>
+                </p>
+            </div>
+           
+           
+            
+            
+        </section>
+
+
+        <!--        Coding Projects section-->
+        <section class="row" id="coding-graphic">
+            <div class="col-md-12">
+                <h2>other smaller projects can be found on <a href="https://codepen.io/ccloudia/" target="_blank">codepen</a> or <a href="https://www.behance.net/claudia_ze13c5" target="_blank">behance</a></h2>
+            </div>
+
+            <div class="col-md-3">
+                <a href="https://codepen.io/ccloudia/pen/qKpRGL" target="_blank"><img src="img/eye.png" alt="first intagram picture"></a>
+                <h3>simple SVG animation</h3>
+            </div>
+            <div class="col-md-3">
+                <a href="https://codepen.io/ccloudia/pen/xzpgWz" target="_blank"><img src="img/pink-calculator.png" alt="second instagram picture"></a>
+                <h3>calculator in Javascript</h3>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.behance.net/gallery/73816403/Bauhaus-Poster" target="_blank"><img src="img/new-bauhaus.png" alt="third instagram picture"></a>
+                <h3>poster inspired by Bauhaus</h3>
+            </div>
+            <div class="col-md-3">
+                <a href="https://www.behance.net/gallery/77869619/Summer-poster" target="_blank"><img src="img/summer-vibes.png" alt="forth instagram picture"></a>
+                <h3>poster for the summer</h3>
+            </div>
+        </section>
+
+        <!--        Contact section-->
+        <section class="row contact" id="contact">
+            <div class="col-md-12">
+                <h2 id="big-title">let's keep in touch</h2>
+                <p>Feel free to reach to me at claudiaz@kth.se</p>
+            </div>
+        </section>
+    </div>
+
+    <!--    Footer-->
     <footer>
-        <div class="container">
-            <div class="social-icon-container">
-                <a href="https://se.linkedin.com/in/claudia-%C5%BCelazowska" target="_blank"><img src="img/social-linkedin-circular-button.svg" class="social-icon" id="linkedin" alt="Linkedin icon" /></a>
-                <a href="https://www.facebook.com/people/Claudia-%C5%BBelazowska/1199050814" target="_blank"><img src="img/social-facebook-circular-button.svg" class="social-icon" alt="Facebook icon" /></a>
-                <a href="https://www.pinterest.se/ccloudia/" target="_blank"><img src="img/pinterest-social-logo.svg" class="social-icon" alt="Pinterest icon" /></a>
-                <a href="https://www.behance.net/claudia_ze13c5" target="_blank"><img src="img/behance-logo-in-circular-social-interface-button.svg" class="social-icon" alt="Behance icon" /></a>
-            </div>
-            <p>Coded by Claudia Z., the design was inspired by the awesome Aga Naplocha from the Awwwesomes</p>
-        </div>
+        <p>coded by <a href="https://www.linkedin.com/in/claudia-%C5%BCelazowska/">Claudia Zelazowska</a>
+            <br> the header photo is taken from Unsplash
+            <br> Stockholm, March 2019</p>
     </footer>
+    <script src="js/main.js"></script>
+
 </body>
 
 </html>
