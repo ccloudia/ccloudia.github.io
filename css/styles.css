@@ -1,307 +1,193 @@
+html {
+    height: 100%;
+}
+
 body {
-    font-family: 'Space Mono', monospace;
-    /*    color: #000000;*/
     margin: 0;
-    padding: 0;
-}
-
-h1,
-h2,
-h3 {
-    font-family: 'Radley', serif;
-    margin: 0;
-    line-height: 1;
-    font-weight: normal;
-}
-
-h2 {
-    font-size: 40px;
-    /*    color: #000000;*/
-}
-
-h3 {
-    font-size: 24px;
-    color: #FF4907;
-/*    margin-top: 20px;*/
-}
-
-/*
-.decorated::after {
-    content: url('../img/line.svg');
-    position: absolute;
-}
-*/
-
-a {
-    /*    font-size: 15px;*/
-    color: #F04D23;
-    transition: all 0.7s ease-in-out;
+    font-family: 'Inconsolata', monospace;
 }
 
 
-a.effect:hover {
-background: #E75D24;
-color: #fff;
-}
-
-a,
-a:hover {
-    text-decoration: none;
-}
-
-a.kth {
-    color: black;
-}
-
-
-p {
-    /*    font-size: 14px;*/
-    text-transform: none;
-    font-weight: 200;
-    line-height: 160%;
-}
-
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
-
-
-section.social-media {
-    height: 40px;
-    width: 40px;
-    position: fixed;
-    left: 0;
-    top: 30vh;
-}
-
-section.social-media ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+/*NAVIGATION*/
 
 nav {
     position: fixed;
     z-index: 1;
-    top: 0;
+    left: 0;
+    right: 0;
+    font-family: 'Prata', serif;
+    font-size: 22px;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Prata', serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 150px;
     margin: 0;
 }
 
-ul.list {
-    list-style-type: none;
-}
-
-nav li {
-    font-size: 15px;
-    margin: 25px 12.5px 25px 12.5px;
-    color: #000;
-    display: inline-block;
-    padding: 10px;
-}
-
-nav li a {
-    color: #000000;
-}
-
-header h1 {
-    font-size: 100px;
-    color: #FFFFFF;
-    letter-spacing: 1px;
-}
-
-header p {
-    font-size: 18px;
-    color: #FFFFFF;
-    font-weight: 400;
-    margin-top: 10px;
-/*    text-transform: lowercase;*/
-}
-/*
-
-#cool-projects p{
-    text-align: justify;
-}
-*/
-
-header {
-    height: 80vh;
-    background-image: url(../img/denise-bossarte-263147-unsplash.jpg);
-    background-size: cover;
-    text-align: center;
-    position: relative;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-attachment: fixed;
-}
-
-img {
-    max-width: 100%;
-/*
-    border-style: dashed;
-    border-color: #FF2000;
-    border-width: thick;
-*/
-}
-
-.author {
-    position: relative;
-    margin-top: 100px;
-}
-
-.author::before {
-    content: url(/img/cross.svg);
-    position: absolute;
-    width: 190px;
-    top: -50px;
-    z-index: -1;
-    left: -60px;
-    animation-name: moveCross;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes moveCross {
-  50% {
-    transform: scale(1.15);
-  }
-}
-.intro ul li {
-    font-size: 15px;
-}
-
-h2#big-title {
-    font-size: 100px;
-    color: #000000;
-    position: relative;
-}
-
-.contact {
-    text-align: center;
-}
-
-.contact p {
-    font-size: 18px;
-}
-
-h2#big-title::before {
-    content: url("../img/line.svg");
-    position: absolute;
-    width: 900px;
-    z-index: -1;
-    left: 100px;
-    bottom: -50px;
-}
-
 h2 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-ul {
-    padding: 0;
+    font-size: 100px;
 }
 
-ul.list li {
-    padding: 15px;
-    border-bottom: 1px solid #eee;
+p {
+    line-height: 145%;
 }
 
-footer {
-    background: #F2F2F2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+#works {
+    color: #0e726f;
 }
 
-.inline {
-    color: #FFF;
-    background-color: #F04D23;
-    margin-right: 2px;
-    padding: 2px;
-    display: inline-block;
+.works-img {
+    position: relative;
+    width: 100%;
 }
 
-#contact {
-/*    padding-top: 100px;*/
-    padding-bottom: 100px;
+#works h2 {
+    color: #4dc2bd;
 }
 
-#contact p {
-    padding-top: 50px;
-}
-
-
-
-/*Section cool projects*/
-
-.extra-breathing {
-    margin-bottom: 8vh;
-}
-/*Text on picture*/
-
-#cool-projects h4 {
+#works h4 {
     position: absolute;
     z-index: 1;
     top: -25px;
-    font-size: 20px;
+}
+
+#works h4.right-aligned {
+    right: 0;
+}
+
+.extra-gutters {
+    padding: 0 60px;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.aboutme h2 {
+    color: #003170;
+}
+
+.contact h2 {
+    color: #f3747b;
+}
+
+.img-margin {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 50px;
 }
 
 h4 {
-    color: white;
-    background: #F2A03C;
+    color: #16736e;
+    background: #75e3dd;
     font-size: 32px;
     display: inline-block;
     margin: 0;
     padding: 4px;
 }
 
-#cool-projects img {
-    max-width: auto;
+.works a {
+    letter-spacing: 3px;
+    color: #53c3c4;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-#projects img {
-    max-height: auto;
+.aboutme h3 {
+    color: #306fbf;
+    margin: 0 0 70px 0;
+    line-height: 100%;
+    width: 100%;
 }
 
-.experiment {
-    margin-bottom: 10px;
+.navigation {
+    text-align: center;
+    font-size: 22px;
 }
 
-#contact img {
-    max-height: 100%;
-    max-width: auto;
+.navigation li {
+    display: inline-block;
+    margin: 0 15px;
 }
 
-.center-container {
+.navigation li a {
+    color: #27bcb8;
+    text-decoration: none;
+}
+
+.left-col,
+.right-col {
+    color: #ffffff;
+    text-align: center;
+    height: 90vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-/*    align-items: center;*/
+    align-items: center;
+}
+
+.left-col {
+    background-color: #003170;
+}
+
+.right-col {
+    background-color: #75e3dd;
+}
+
+.top-container {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.scroll {
+    color: #2864b1;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*Image takes 100% of the parent container. */
+
+img {
+    max-width: 100%;
+    /*    position: relative;*/
+}
+
+footer {
+    background-color: #f5979c;
+    min-height: 220px;
+    background-image: url('../img/socialmedia.svg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.social-icon {
+    height: 60px;
+    margin: 10px 20px;
+}
+
+.social-icon-container {
+    text-align: center;
+}
+
+.social-icon-container img {
+    color: #fff;
 }
