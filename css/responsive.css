@@ -1,0 +1,32 @@
+@media screen and (max-width: 766px) {
+    nav.desktop {
+        display: none;
+    }
+    button#mobile-menu-launch {
+        display: block;
+    }
+    div.desktop {
+        display: none;
+    }
+    div.mobile-picture {
+        display: block;
+    }
+    h2#big-title::before {
+        display: none;
+    }
+    #contact span {
+        border-bottom: 3px solid #F04D23;
+    }
+    div.typewriter {
+        display: none;
+    }
+    h1.mobile-hello {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    h2#big-title::before {
+        display: none;
+    }
+}

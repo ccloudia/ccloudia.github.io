@@ -1,6 +1,5 @@
 body {
     font-family: 'Space Mono', monospace;
-    /*    color: #000000;*/
     margin: 0;
     padding: 0;
 }
@@ -14,34 +13,60 @@ h3 {
     font-weight: normal;
 }
 
+h1.mobile-hello {
+    display: none;
+}
+
 h2 {
     font-size: 40px;
-    /*    color: #000000;*/
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+h2#big-title {
+    font-size: 100px;
+    color: #000000;
+    position: relative;
+}
+
+h2#big-title::before {
+    content: url("../img/line.svg");
+    position: absolute;
+    width: 900px;
+    z-index: -1;
+    left: 100px;
+    bottom: -50px;
 }
 
 h3 {
     font-size: 24px;
     color: #FF4907;
-/*    margin-top: 20px;*/
 }
 
-/*
-.decorated::after {
-    content: url('../img/line.svg');
-    position: absolute;
+h4 {
+    color: white;
+    background: #F2A03C;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0;
+    padding: 4px;
 }
-*/
+
+#cool-projects h4 {
+    position: absolute;
+    z-index: 1;
+    top: -25px;
+    font-size: 20px;
+}
 
 a {
-    /*    font-size: 15px;*/
     color: #F04D23;
     transition: all 0.7s ease-in-out;
 }
 
-
 a.effect:hover {
-background: #E75D24;
-color: #fff;
+    background: #E75D24;
+    color: #fff;
 }
 
 a,
@@ -49,40 +74,52 @@ a:hover {
     text-decoration: none;
 }
 
-a.kth {
-    color: black;
+a.underline:hover {
+    text-decoration: underline;
 }
 
-
 p {
-    /*    font-size: 14px;*/
     text-transform: none;
     font-weight: 200;
     line-height: 160%;
 }
 
 .typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
 }
+
 
 /* The typing effect */
+
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
 }
+
 
 /* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
-}
 
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: orange;
+    }
+}
 
 section.social-media {
     height: 40px;
@@ -98,16 +135,77 @@ section.social-media ul {
     margin: 0;
 }
 
+
+/*NAVIGATION*/
+
 nav {
     position: fixed;
     z-index: 1;
     top: 0;
 }
 
+
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+nav.mobile {
+    width: 100%;
+    background: #fff;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 100px 0;
+    z-index: 200;
+}
+
+div.mobile-picture {
+    display: none;
+}
+
+button#mobile-menu-launch {
+    border: 0;
+    border: solid;
+    border-color: #F04D23;
+    background: none;
+    font-size: 20px;
+    padding: 20px 30px;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    z-index: 150;
+}
+
+button#mobile-menu-launch {
+    display: none;
+}
+
+nav.mobile ul li {
+    display: block;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#mobile-menu-launch {
+    float: right;
+    position: relative;
+}
+
+nav.mobile {
+    display: none;
+}
+
+.close-icon {
+    height: 40px;
+    right: 20px;
+    margin: 20px;
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 ul.list {
@@ -126,6 +224,8 @@ nav li a {
     color: #000000;
 }
 
+/*HEADER*/
+
 header h1 {
     font-size: 100px;
     color: #FFFFFF;
@@ -137,14 +237,8 @@ header p {
     color: #FFFFFF;
     font-weight: 400;
     margin-top: 10px;
-/*    text-transform: lowercase;*/
 }
-/*
 
-#cool-projects p{
-    text-align: justify;
-}
-*/
 
 header {
     height: 80vh;
@@ -160,14 +254,11 @@ header {
     background-attachment: fixed;
 }
 
+/*IMG*/
 img {
     max-width: 100%;
-/*
-    border-style: dashed;
-    border-color: #FF2000;
-    border-width: thick;
-*/
 }
+
 
 .author {
     position: relative;
@@ -187,19 +278,15 @@ img {
 }
 
 @keyframes moveCross {
-  50% {
-    transform: scale(1.15);
-  }
+    50% {
+        transform: scale(1.15);
+    }
 }
+
 .intro ul li {
     font-size: 15px;
 }
 
-h2#big-title {
-    font-size: 100px;
-    color: #000000;
-    position: relative;
-}
 
 .contact {
     text-align: center;
@@ -209,19 +296,6 @@ h2#big-title {
     font-size: 18px;
 }
 
-h2#big-title::before {
-    content: url("../img/line.svg");
-    position: absolute;
-    width: 900px;
-    z-index: -1;
-    left: 100px;
-    bottom: -50px;
-}
-
-h2 {
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
 ul {
     padding: 0;
 }
@@ -249,7 +323,7 @@ footer {
 }
 
 #contact {
-/*    padding-top: 100px;*/
+    /*    padding-top: 100px;*/
     padding-bottom: 100px;
 }
 
@@ -258,29 +332,12 @@ footer {
 }
 
 
-
 /*Section cool projects*/
 
 .extra-breathing {
     margin-bottom: 8vh;
 }
-/*Text on picture*/
 
-#cool-projects h4 {
-    position: absolute;
-    z-index: 1;
-    top: -25px;
-    font-size: 20px;
-}
-
-h4 {
-    color: white;
-    background: #F2A03C;
-    font-size: 32px;
-    display: inline-block;
-    margin: 0;
-    padding: 4px;
-}
 
 #cool-projects img {
     max-width: auto;
@@ -303,5 +360,9 @@ h4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-/*    align-items: center;*/
+    /*    align-items: center;*/
+}
+
+#coding-graphic i.fa-link {
+    font-size: 16px;
 }

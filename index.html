@@ -4,11 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Claudia's Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Radley:400,400i|Space+Mono:400,400i" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="img/kanelbulle.png">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
 </head>
 
@@ -17,36 +20,33 @@
 
     <!--   Header-->
     <header>
-        <nav>
+
+        <!--       NAVIGATION FOR DESKTOP-->
+        <nav class="desktop">
             <ul>
                 <li><a class="effect" href="#">intro</a></li>
-                <li><a class="effect" href="#cool-projects">projects</a></li>
                 <li><a class="effect" href="#about-me">about me</a></li>
+                <li><a class="effect" href="#cool-projects">projects</a></li>
                 <li><a class="effect" href="#contact">contact</a></li>
             </ul>
         </nav>
+        <!--       NAVIGATION FOR MOBILE-->
+
+        <button id="mobile-menu-launch">menu</button>
+        <nav class="mobile">
+            <img src="img/cross.svg" class="close-icon" alt="close">
+            <ul>
+                <li><a href="#">intro</a></li>
+                <li><a href="#about-me">about me</a></li>
+                <li><a href="#cool-projects">projects</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
         <div class="typewriter">
-            <h1>Hi there!</h1></div>
-        <p>I'm an aspiring UX/UI designer based in Stockholm
+            <h1 class="custom-class">Hi there!</h1></div>
+        <h1 class="mobile-hello">Hi there!</h1>
+        <p>I'm an aspiring UX/UI designer based in Stockholm </p>
     </header>
-
-<!--
-       Social media on the left side
-    <section class="social-media">
-        <ul>
-            <li>
-                <a class="effect" href="facebook.com" target="_blank"><img src="/img/facebook.svg" alt="facebook icon"></a>
-            </li>
-            <li>
-                <a class="effect" href="instagram.com" target="_blank"><img src="/img/instagram.svg" alt="instagram icon"></a>
-            </li>
-            <li>
-                <a class="effect" href="twitter.com" target="_blank"><img src="/img/twitter.svg" alt="twitter icon"></a>
-            </li>
-        </ul>
-    </section>
--->
-
     <div class="container">
 
         <!--    About-me section with a short intro-->
@@ -86,26 +86,25 @@
             <!--            first project - Spotify-->
             <div class="col-md-5 extra-breathing">
                 <h3>Social feature for the Spotify app</h3>
-                <br>
                 <p> <span class="inline"> Brief: </span>The goal of the course was to learn user-centered design. We were given the task of looking at music consumption identify an interesting problem and turn it into a design opportunity. My group decided to explore the social aspect of music and more specifically how could Spotify connect people through its app.
                     <br> <span class="inline">Course:</span> Interaction Design Methods (DH2628) at KTH.
                     <br>
                     <span class="inline">Methods:</span>focus group, interviews, bodystorming, user testing
                     <br><span class="inline">Final deliverable:</span> a hi-fi prototype of a feature which allows users to connect to people going to the same concert on the Spotify app.</p>
-                <a href="https://xd.adobe.com/view/badca1e3-5915-40b2-640e-32a0b1ef83aa-cced/" target="_blank">LINK TO HI-FI PROTOTYPE</a>
+                <a href="https://xd.adobe.com/view/badca1e3-5915-40b2-640e-32a0b1ef83aa-cced/" target="_blank" class="underline"><i class="fa fa-link"></i> LINK TO HI-FI PROTOTYPE</a>
                 <br>
                 <br>
-                <a href="https://docs.google.com/document/d/1vRaja_LrLWB7u0H6BwWXa3wXZa9643kNlyRN62VWxyw/edit?usp=sharing" target="_blank">LINK TO DOCUMENTED DESIGN PROCESS</a>
+                <a href="https://docs.google.com/document/d/1vRaja_LrLWB7u0H6BwWXa3wXZa9643kNlyRN62VWxyw/edit?usp=sharing" target="_blank" class="underline"><i class="fa fa-link"></i> LINK TO DOCUMENTED DESIGN PROCESS</a>
             </div>
 
-            <div class="col-md-5 offset-md-2 kth-projects extra-breathing">
+            <div class="col-md-5 offset-md-2 kth-projects extra-breathing desktop">
                 <h4>UX/UI design</h4>
                 <img src="img/spotify-new.jpg" class="line-text" alt="spotify project">
 
             </div>
 
             <!--           Second project - social media-->
-            <div class="col-md-5 kth-projects extra-breathing">
+            <div class="col-md-5 kth-projects extra-breathing desktop">
                 <h4>UX/UI design</h4>
                 <img src="img/htc-phone.jpg" class="line-text" alt="prototype of social media app">
 
@@ -118,10 +117,10 @@
                     <br>
                     <span class="inline">Methods:</span>sketches, rapid prototyping, personas, user scenarios and interviews.
                     <br><span class="inline">Final deliverable:</span> A prototype which displays open data about festivities in different countries and from different times allowing users to contribute and interact with each other. </p>
-                <a href="https://xd.adobe.com/view/0419ca2a-314a-438e-58d1-37108fde64c3-7228/" target="_blank">LINK TO HI-FI PROTOTYPE</a>
+                <a href="https://xd.adobe.com/view/0419ca2a-314a-438e-58d1-37108fde64c3-7228/" target="_blank" class="underline"> <i class="fa fa-link"></i> LINK TO HI-FI PROTOTYPE</a>
                 <br>
                 <br>
-                <a href="https://drive.google.com/file/d/11EVZNj7fLBJFCNRBZgJcmqx-FX-3ZC-n/view" target="_blank">LINK TO DOCUMENTED DESIGN PROCESS</a>
+                <a href="https://drive.google.com/file/d/11EVZNj7fLBJFCNRBZgJcmqx-FX-3ZC-n/view" target="_blank" class="underline"> <i class="fa fa-link"></i> LINK TO DOCUMENTED DESIGN PROCESS</a>
 
             </div>
 
@@ -135,127 +134,103 @@
                     <br>
                     <span class="inline">Methods:</span>interview, design probes, sketching (on paper & digital), storyboarding
                     <br><span class="inline">Final deliverable:</span> Physical design probes, a storyboard and digital sketches representing the idea.</p>
-                <a href="https://docs.google.com/presentation/d/1omzqlQtDYmmYvBD-FpgSDarix6sm7i0A28nv3tJPsrc/edit?usp=sharing" target="_blank">LINK TO DOCUMENTED DESIGN PROCESS</a>
+                <a href="https://docs.google.com/presentation/d/1omzqlQtDYmmYvBD-FpgSDarix6sm7i0A28nv3tJPsrc/edit?usp=sharing" target="_blank" class="underline"><i class="fa fa-link"></i> LINK TO DOCUMENTED DESIGN PROCESS</a>
                 <br>
             </div>
 
-            <div class="col-md-5 offset-md-2 kth-projects extra-breathing">
+            <div class="col-md-5 offset-md-2 kth-projects extra-breathing desktop">
                 <h4>physical interaction design</h4>
-                <img src="img/bracelet-party.gif" class="line-text" alt="">
+                <img src="img/bracelet-party.gif" class="line-text" alt="digital bracelet project">
 
             </div>
         </section>
 
-
-
-        <!--       Projects section (non-KTH related)-->
-
-        <!--
-        <section class="row" id="projects">
-            <div class="col-md-12">
-
-                <h2>other projects</h2>
-                <p>Below are some projects I did in my spare time.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="img/Zrzut%20ekranu%202019-03-15%20o%2016.51.45.png" alt="the vintage house">
-                <h3>+ redesign of an e-learning website</h3>
-                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-            </div>
-            <div class="col-md-4">
-                <img src="img/Zrzut%20ekranu%202019-03-15%20o%2016.51.27.png" alt="colors of interiors">
-                <h3>+ website for Oolong Tea House</h3>
-                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-            </div>
-            <div class="col-md-4">
-                <h3>+ projects using Javascript</h3>
-                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-                <h3>+ another project</h3>
-                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-                <h3>+ and one more</h3>
-                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-                <h3>+ graphic design projects</h3>
-                <p>Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-            </div>
-        </section>
-        
--->
-
-        <!--    EXPERIMENT-->
+        <!--    SPARE TIME PROJECTS-->
         <section class="row">
             <div class="col-md-12 extra-breathing">
 
                 <h2>other projects</h2>
                 <p>Below are some projects I did in my spare time.</p>
             </div>
-            <div class="col-md-6 extra-breathing">
-                <img src="img/oolong-website.png" alt="">
+            <div class="col-md-6 extra-breathing desktop">
+                <img src="img/oolong-website.png" alt="oolong website">
             </div>
 
             <div class="col-md-5 offset-md-1 center-container">
                 <h3>Website for Oolong Tea House</h3>
                 <p>My friend and I made a website in Wordpress for the newly opened tea house in Hötorget (Stockholm).
-                <br><br> Click <a href="http://oolongteahouse.se/">here</a> to see it.
+                    <br>
+                    <br> Click <a href="http://oolongteahouse.se/" class="underline">here</a> to see it.
                 </p>
             </div>
-            
+            <div class="col-md-6 extra-breathing mobile-picture">
+                <img src="img/oolong-website.png" alt="">
+            </div>
             <div class="col-md-6">
                 <h3>Redesign of an e-learning website</h3>
-                <p>Project for course "UI/UX & Web Design using Adobe XD 2018 - User Experience Design" on Skillshare. 
-                The goal of the course was to learn Adobe XD and redesign the interface of an existing e-learning platform.
-                    <br><br>
-                    <a href="https://www.bringyourownlaptop.com/" target="_blank">Link to website to be redesigned</a> <br>
-                    <a href="https://xd.adobe.com/view/53574245-40a0-40d9-7f55-6aa74e3836e4-2566/" target="_blank">Link to hi-fi prototype</a> <br>
-                    <a href="https://xd.adobe.com/view/cd767a79-b9ca-4947-60e5-ce776a4d77c5-bb47/" target="_blank">Link to wireframes</a> <br>
-                    <a href="https://docs.google.com/document/d/1LiylUUazuwNWYl2qz7ipXs0atykmnEMHrOx7UZiM-SM/edit?usp=sharing" target="_blank">Link to design brief from teacher</a>
-                    
+                <p>Project for course "UI/UX & Web Design using Adobe XD 2018 - User Experience Design" on Skillshare. The goal of the course was to learn Adobe XD and redesign the interface of an existing e-learning platform.
+                    <br>
+                    <br>
+                    <a href="https://www.bringyourownlaptop.com/" target="_blank" class="underline"><i class="fa fa-link"></i> Link to website to be redesigned</a>
+                    <br>
+                    <a href="https://xd.adobe.com/view/53574245-40a0-40d9-7f55-6aa74e3836e4-2566/" target="_blank" class="underline"><i class="fa fa-link"></i> Link to hi-fi prototype</a>
+                    <br>
+                    <a href="https://xd.adobe.com/view/cd767a79-b9ca-4947-60e5-ce776a4d77c5-bb47/" target="_blank" class="underline"><i class="fa fa-link"></i> Link to wireframes</a>
+                    <br>
+                    <a href="https://docs.google.com/document/d/1LiylUUazuwNWYl2qz7ipXs0atykmnEMHrOx7UZiM-SM/edit?usp=sharing" target="_blank" class="underline"><i class="fa fa-link"></i> Link to design brief from teacher</a>
+
                 </p>
-                
+
             </div>
-            
+
             <div class="col-md-6">
-               <img src="img/byol-website.png" alt="">   
+                <img src="img/byol-website.png" alt="">
             </div>
-            
-           <div class="col-md-6 extra-breathing">
+
+            <div class="col-md-6 extra-breathing desktop">
                 <img src="img/sl-app.jpg" alt="">
             </div>
 
             <div class="col-md-5 offset-md-1 center-container">
                 <h3>Redesigning buying tickets in the SL app</h3>
                 <p>Since I use the SL app daily, I thought it would be fun to think how it can be redesigned. Based on some interviews I decided to focus on redesigning the user experience of buying tickets.
-                <br><br><a href="https://docs.google.com/document/d/1y08pf8-jxyX5jyvRaRjQZ-htlllkuovCm_vwjlpkfMs/edit?usp=sharing" target="_blank">Link to documented design process</a>
-                <br> <a href="https://xd.adobe.com/view/ab4ea8f1-3626-4420-6d15-b61999765115-dd7f/" target="_blank">Link to wireframes</a>
+                    <br>
+                    <br><a href="https://docs.google.com/document/d/1y08pf8-jxyX5jyvRaRjQZ-htlllkuovCm_vwjlpkfMs/edit?usp=sharing" target="_blank" class="underline"><i class="fa fa-link"></i> Link to documented design process</a>
+                    <br> <a href="https://xd.adobe.com/view/ab4ea8f1-3626-4420-6d15-b61999765115-dd7f/" target="_blank" class="underline"><i class="fa fa-link"></i> Link to wireframes</a>
                 </p>
             </div>
-           
-           
-            
-            
+            <div class="col-md-6 extra-breathing mobile-picture">
+                <img src="img/sl-app.jpg" alt="">
+            </div>
+
+
+
         </section>
 
 
-        <!--        Coding Projects section-->
+        <!--        OTHER Projects section-->
         <section class="row" id="coding-graphic">
             <div class="col-md-12">
-                <h2>other smaller projects can be found on <a href="https://codepen.io/ccloudia/" target="_blank">codepen</a> or <a href="https://www.behance.net/claudia_ze13c5" target="_blank">behance</a></h2>
+                <h2>other smaller projects can be found on <a href="https://codepen.io/ccloudia/" target="_blank" class="effect">codepen</a> or <a href="https://www.behance.net/claudia_ze13c5" target="_blank" class="effect">behance</a></h2>
             </div>
 
-            <div class="col-md-3">
-                <a href="https://codepen.io/ccloudia/pen/qKpRGL" target="_blank"><img src="img/eye.png" alt="first intagram picture"></a>
-                <h3>simple SVG animation</h3>
+            <div class="col-md-3 extra-breathing">
+                <a href="https://codepen.io/ccloudia/pen/qKpRGL" target="_blank"><img src="img/eye.png" alt="SVG animation"> </a>
+                <a href="https://codepen.io/ccloudia/pen/qKpRGL" target="_blank" class="underline">
+                    <h3>simple SVG animation</h3></a>
+            </div>
+            <div class="col-md-3 extra-breathing">
+                <a href="https://codepen.io/ccloudia/pen/xzpgWz" target="_blank"><img src="img/pink-calculator.png" alt="calculator project"></a>
+                <a href="https://codepen.io/ccloudia/pen/xzpgWz" target="_blank" class="underline"><h3>calculator in Javascript</h3></a>
+            </div>
+            <div class="col-md-3 extra-breathing">
+                <a href="https://www.behance.net/gallery/73816403/Bauhaus-Poster" target="_blank"><img src="img/new-bauhaus.png" alt="bauhaus project"></a>
+                <a href="https://www.behance.net/gallery/73816403/Bauhaus-Poster" target="_blank" class="underline"><h3>poster inspired by Bauhaus</h3></a>
             </div>
             <div class="col-md-3">
-                <a href="https://codepen.io/ccloudia/pen/xzpgWz" target="_blank"><img src="img/pink-calculator.png" alt="second instagram picture"></a>
-                <h3>calculator in Javascript</h3>
-            </div>
-            <div class="col-md-3">
-                <a href="https://www.behance.net/gallery/73816403/Bauhaus-Poster" target="_blank"><img src="img/new-bauhaus.png" alt="third instagram picture"></a>
-                <h3>poster inspired by Bauhaus</h3>
-            </div>
-            <div class="col-md-3">
-                <a href="https://www.behance.net/gallery/77869619/Summer-poster" target="_blank"><img src="img/summer-vibes.png" alt="forth instagram picture"></a>
-                <h3>poster for the summer</h3>
+                <a href="https://www.behance.net/gallery/77869619/Summer-poster" target="_blank"><img src="img/summer-vibes.png" alt="poster for the summer"></a>
+                <a href="https://www.behance.net/gallery/77869619/Summer-poster" target="_blank" class="underline">
+                    <h3>poster for the summer</h3></a>
             </div>
         </section>
 
@@ -263,7 +238,7 @@
         <section class="row contact" id="contact">
             <div class="col-md-12">
                 <h2 id="big-title">let's keep in touch</h2>
-                <p>Feel free to reach to me at claudiaz@kth.se</p>
+                <p>Feel free to reach to me at <span>claudiaz@kth.se</span></p>
             </div>
         </section>
     </div>
@@ -275,7 +250,6 @@
             <br> Stockholm, March 2019</p>
     </footer>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>

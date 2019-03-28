@@ -1,13 +1,13 @@
-//'use strict'
-//
-//var i = 0;
-//var txt = 'Some text!'; /* The text */
-//var speed = 50; /* The speed/duration of the effect in milliseconds */
-//
-//function typeWriter() {
-//  if (i < txt.length) {
-//    document.getElementById("demo").innerHTML += txt.charAt(i);
-//    i++;
-//    setTimeout(typeWriter, speed);
-//  }
-//}
+$(document).ready(function(){
+	$('#mobile-menu-launch').click(function() {
+	    $("nav.mobile").slideToggle();
+	});
+
+	$('nav.mobile').click(function() {
+	    $(this).slide();
+	});
+	$('.close-icon').click(function() {
+	    $('nav.mobile').slideUp();
+	});
+
+});
