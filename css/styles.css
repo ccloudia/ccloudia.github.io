@@ -366,3 +366,7 @@ footer {
 #coding-graphic i.fa-link {
     font-size: 16px;
 }
+
+#contact span {
+        border-bottom: 3px solid #F04D23;
+    }
